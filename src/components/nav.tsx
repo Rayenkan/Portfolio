@@ -6,7 +6,7 @@ const Nav = (props) => {
 
   return (
     <div
-      className={`${props.mode}  border w-[90vw] h-24 flex justify-between items-center px-4 bg-white dark:bg-[#242424] mt-5 rounded-md border-gray-300`}
+      className={`${props.mode} w-[100vw] h-20 flex justify-between items-center px-3 bg-white dark:bg-[#242424] rounded-md`}
     >
       <p className="text-4xl">
         <span className="text-green-500">&lt; R</span>
