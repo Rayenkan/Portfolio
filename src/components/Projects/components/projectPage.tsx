@@ -5,7 +5,7 @@ const ProjectPage = ({ src, projectName, projectDesc ,projectLink }) => {
   return (
     <div className="flex flex-col md:flex-row ">
       <div className="md:w-[40%] ml-12">
-        <img src={src} alt="img" className="max-w-full h-auto rounded-xl" />
+        <img src={src} alt="img" className="max-w-full h-auto rounded-xl border border-black" />
       </div>
       <div className="md:w-[50%] md:pl-4 [&>*]:mt-5 ml-12 ">
         <p className="text-2xl font-semibold text-left">{projectName}</p>

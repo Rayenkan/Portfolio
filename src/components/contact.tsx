@@ -1,16 +1,16 @@
 const Contact = () => {
     return (
-        <div className="dark:bg-[#242828] bg-gray-100 py-20 dark:text-white text-black font-mono mx-2 [&>*]:my-14 w-full">
+        <div className="dark:bg-[#242828] bg-gray-200 py-20 dark:text-white text-black font-mono mx-2 [&>*]:my-14 w-full">
             <div className="flex flex-col items-center">
-                <h1 className="text-center font-semibold">CONTACT</h1>
+                <h1 className="text-center font-semibold">Contact</h1>
                 <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5 mb-5">
                     Feel free to Contact me by submitting the form below and I will get
                     back to you as soon as possible
                 </p>
             </div>
-            <div>
-                <section className="bg-gray-200 dark:bg-[#242828]">
-                    <div className="py-8 lg:py-2 px-4 mx-auto max-w-screen-md">
+            <div className="flex justify-center">
+                <section className="bg-gray-200 w-[60%] dark:bg-[#242828]">
+                    <div className="py-8 lg:py-10 px-4 mx-auto max-w-screen-md">
                         <form action="#" className="space-y-8">
                             <div>
                                 <label className="block text-left mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email :</label>
