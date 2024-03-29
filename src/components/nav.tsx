@@ -13,7 +13,7 @@ const Nav = (props) => {
         <span className="text-black dark:text-white ">ayen</span>{" "}
         <span className="text-green-500"> /&gt;</span>
       </p>
-      <ul className="list-none flex flex-row space-x-8 [&>*]:cursor-pointer">
+      <ul className="list-none flex flex-row space-x-8 [&>*]:cursor-pointer ">
         <li
           className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}>
           Home
@@ -31,7 +31,7 @@ const Nav = (props) => {
           Resume
         </li>
       </ul>
-      <div className="flex items-center [&>*]:mx-3">
+      <div className="flex items-center [&>*]:mx-3   ">
         <button
           className={`ml-4 p-2 rounded-full dark:text-gray-500 text-yellow-500 bg-blue-400 dark:bg-gray-200 hover:bg-blue-600 dark:hover:bg-gray-700 focus:outline-none`}
           onClick={handleModeChange}>
@@ -57,7 +57,7 @@ const Nav = (props) => {
           )}
         </button>
         <button
-          className=" border-none rounded-lg mr-5 bg-green-500 ">
+          className=" border-none rounded-lg mr-5 bg-green-500 transition duration-300 ease-in-out transform hover:scale-105">
             Contact Me
         </button>
       </div>

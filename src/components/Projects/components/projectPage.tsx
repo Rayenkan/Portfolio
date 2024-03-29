@@ -12,7 +12,7 @@ const ProjectPage = ({ src, projectName, projectDesc ,projectLink }) => {
         <p className="text-lg text-left">{projectDesc}</p>
         <div className="flex justify-start">
             <a href={projectLink}>
-            <button className="bg-green-500  w-fit h-fit p-2 md:w-[13vw] max-w-[250px]  mt-2  dark:text-white text-gray-800">
+            <button className="bg-green-500  w-fit h-fit p-2 md:w-[13vw] max-w-[250px]  mt-2  dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105">
             Project Link
           </button>
             </a>

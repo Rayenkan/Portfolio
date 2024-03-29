@@ -27,7 +27,7 @@ const AboutMe = () => {
             <p>
               🔗 Feel free to connect with me on LinkedIn to stay updated on my latest endeavors and professional achievements.
             </p>
-            <button className="border-none  rounded-lg mr-5 bg-green-500">Contact Me</button>
+            <button className="border-none  rounded-lg mr-5 bg-green-500 transition duration-300 ease-in-out transform hover:scale-105">Contact Me</button>
           </div>
 
         </div>
