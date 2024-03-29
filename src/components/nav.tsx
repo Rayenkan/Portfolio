@@ -8,12 +8,12 @@ const Nav = (props) => {
     <div
       className={`${props.mode} w-[100vw] h-20 flex justify-between items-center px-3 bg-white dark:bg-[#242424] rounded-md`}
     >
-      <p className="text-4xl">
+      <p className="text-4xl cursor-pointer">
         <span className="text-green-500">&lt; R</span>
         <span className="text-black dark:text-white ">ayen</span>{" "}
         <span className="text-green-500"> /&gt;</span>
       </p>
-      <ul className="list-none flex flex-row space-x-4">
+      <ul className="list-none flex flex-row space-x-8 [&>*]:cursor-pointer">
         <li
           className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}>
           Home

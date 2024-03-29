@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/nav";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [mode, setMode] = useState("dark");
@@ -16,6 +17,7 @@ function App() {
       <hr className=" w-full dark:bg-white bg-black shadow-xl" />
       <Home />
       <AboutMe/>
+      <Projects/>
     </div>
   );
 }

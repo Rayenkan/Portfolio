@@ -4,8 +4,8 @@ import { faGithub , faLinkedin , faFacebook  } from '@fortawesome/free-brands-sv
 const Home =(props)=>{
     return (
         <div className={` dark:bg-[#242424] bg-gray-100 h-[90vh] `}>
-            <div className="absolute mt-[10%] ">
-                <ul className='text-4xl [&>*]:my-2 ml-1'>
+            <div className="absolute mt-[10%] z-50">
+                <ul className='text-4xl [&>*]:my-2 ml-1 '>
                     <li><a href="https://github.com/Rayenkan"><FontAwesomeIcon icon={faGithub} /></a></li>
                     <li><a href="https://www.linkedin.com/in/rayen-kanzari-b17a52298/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=100090960805342"><FontAwesomeIcon icon={faFacebook} /></a></li>
