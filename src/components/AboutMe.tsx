@@ -4,14 +4,14 @@ const AboutMe = () => {
   return (
     <div className="dark:bg-[#242828] bg-gray-200 dark:text-white text-black  font-mono  py-24  w-fit h-fit relative">
       <div className="flex flex-col items-center">
-        <h1 className="text-center font-semibold">About Me</h1>
+        <h1 className="text-center font-semibold text-green-600">About Me</h1>
         <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
       <div className="flex flex-col md:flex-row h-[85vh] w-full [&>*]:my-5 ">
 
         <div className="w-full text-left ml-12 [&>*]:my-10 font-semibold">
-          <p className="text-4xl">Get to know me :</p>
-          <div className="max-w-[80%] dark:text-white text-black [&>*]:my-4 [&>*]:font-semibold ">
+          <p className="text-4xl ">Get to know me :</p>
+          <div className="max-w-[80%] dark:text-white text-black [&>*]:my-4 [&>*]:font-medium ">
             <p>
               👋 Hi there! I'm a Full Stack Web Developer focused on building
               user-friendly web experiences. Take a look at my projects below!

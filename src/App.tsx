@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [mode, setMode] = useState("dark");
@@ -20,6 +21,7 @@ function App() {
       <AboutMe/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 const Contact = () => {
     return (
-        <div className="dark:bg-[#242828] bg-gray-200 py-20 dark:text-white text-black font-mono mx-2 [&>*]:my-14 w-full">
+        <div className="dark:bg-[#242828] bg-gray-200 py-14 dark:text-white text-black font-mono mx-2 [&>*]:my-14 w-full">
             <div className="flex flex-col items-center">
-                <h1 className="text-center font-semibold">Contact</h1>
+                <h1 className="text-center font-semibold text-green-600">Contact</h1>
                 <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5 mb-5">
                     Feel free to Contact me by submitting the form below and I will get
                     back to you as soon as possible

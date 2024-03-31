@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="dark:bg-[#242424] bg-gray-100 py-20 dark:text-white text-black  font-mono  mx-2 [&>*]:my-14  w-fit">
       <div className="flex flex-col items-center">
-        <h1 className="text-center font-semibold">PROJECTS</h1>
+        <h1 className="text-center font-semibold text-green-600">My Recent Work</h1>
         <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5 mb-5">
           Here you will find some of the personal and clients projects that I
           created with each project containing its own case study
