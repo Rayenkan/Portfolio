@@ -1,14 +1,13 @@
+import { forwardRef } from "react";
 
-
-const AboutMe = () => {
+const AboutMe = forwardRef((_props , ref) => {
   return (
-    <div className="dark:bg-[#242828] bg-gray-200 dark:text-white text-black  font-mono  py-24  w-fit h-fit relative">
+    <div className="dark:bg-[#242828] bg-gray-200 dark:text-white text-black  font-mono  py-24  w-fit h-fit relative" ref={ref}>
       <div className="flex flex-col items-center">
         <h1 className="text-center font-semibold text-green-600">About Me</h1>
         <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
-      <div className="flex flex-col md:flex-row h-[85vh] w-full [&>*]:my-5 ">
-
+      <div className="flex flex-col md:flex-row md:h-[85vh] h-fit  w-full [&>*]:my-5 ">
         <div className="w-full text-left ml-12 [&>*]:my-10 font-semibold">
           <p className="text-4xl ">Get to know me :</p>
           <div className="max-w-[80%] dark:text-white text-black [&>*]:my-4 [&>*]:font-medium ">
@@ -29,7 +28,6 @@ const AboutMe = () => {
             </p>
             <button className="border-none  rounded-lg mr-5 bg-green-500 transition duration-300 ease-in-out transform hover:scale-105">Contact Me</button>
           </div>
-
         </div>
         <div className="w-full  text-left ml-12 mr-5 ">
           <p className="text-4xl font-semibold mt-10">My Skills :</p>
@@ -52,7 +50,7 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
-
   );
-};
+});
+
 export default AboutMe;

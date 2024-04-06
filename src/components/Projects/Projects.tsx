@@ -2,10 +2,11 @@ import ProjectPage from "./components/projectPage";
 import pyCompilerImg from "./projectImg/pythonCompiler.webp";
 import recipeWebImg from "./projectImg/recipeSharing.webp";
 import GameHubImg from "./projectImg/gameInfoHub.webp";
+import { forwardRef } from "react";
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
   return (
-    <div className="dark:bg-[#242424] bg-gray-100 py-20 dark:text-white text-black  font-mono  mx-2 [&>*]:my-14  w-fit">
+    <div className="dark:bg-[#242424] bg-gray-100 py-10 dark:text-white text-black font-mono mx-2 [&>*]:my-14  w-fit" ref={ref}>
       <div className="flex flex-col items-center">
         <h1 className="text-center font-semibold text-green-600">My Recent Work</h1>
         <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5 mb-5">
@@ -13,12 +14,12 @@ const Projects = () => {
           created with each project containing its own case study
         </p>
       </div>
-      <div className="[&>*]:my-10 ">
+      <div className="[&>*]:my-10">
         <ProjectPage
           src={pyCompilerImg}
-          projectName={"Python Online Interpeter"}
+          projectName={"Python Online Interpreter"}
           projectDesc={
-            "Discover our Python online Interpeter . With an integrated code editor.Built with React , tailwind and Flask"
+            "Discover our Python online Interpreter. With an integrated code editor. Built with React, Tailwind CSS, and Flask"
           }
           projectLink={"https://github.com/Rayenkan/Online-code-editor-python-"}
         />
@@ -41,12 +42,13 @@ const Projects = () => {
       </div>
       <div>
         <a href="https://github.com/Rayenkan?tab=repositories">
-          <button className="bg-green-500  w-fit h-fit p-2 md:w-[20vw] max-w-[250px]  mt-2 py-4 font-semibold dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105">
+          <button className="bg-green-500 w-fit h-fit p-2 md:w-[20vw] max-w-[250px] mt-2 py-4 font-semibold dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105">
             See More On Github
           </button>
         </a>
       </div>
     </div>
   );
-};
+});
+
 export default Projects;

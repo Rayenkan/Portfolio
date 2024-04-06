@@ -1,4 +1,6 @@
-const Nav = (props) => {
+import { MouseEventHandler } from "react";
+
+const Nav = (props: { mode: string; changeMode: (arg0: string) => void; onScrollAboutMe: MouseEventHandler<HTMLLIElement> | undefined; onScrollProjects: MouseEventHandler<HTMLLIElement> | undefined; onScrollContact: MouseEventHandler<HTMLButtonElement> | undefined; }) => {
   const handleModeChange = () => {
     const newMode: string = props.mode === "light" ? "dark" : "light";
     props.changeMode(newMode);
@@ -19,15 +21,19 @@ const Nav = (props) => {
           Home
         </li>
         <li
-          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}>
+          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
+          onClick={props.onScrollAboutMe}
+          >
           About Me
         </li>
         <li
-          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}>
+          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
+          onClick={props.onScrollProjects}>
           Projects
         </li>
         <li
-          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}>
+          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
+          >
           Resume
         </li>
       </ul>
@@ -57,7 +63,8 @@ const Nav = (props) => {
           )}
         </button>
         <button
-          className=" border-none rounded-lg mr-5 bg-green-500 transition duration-300 ease-in-out transform hover:scale-105">
+          className=" border-none rounded-lg mr-5 bg-green-500 transition duration-300 ease-in-out transform hover:scale-105"
+          onClick={props.onScrollContact} >
             Contact Me
         </button>
       </div>

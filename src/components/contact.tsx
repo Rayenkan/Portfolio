@@ -1,6 +1,8 @@
-const Contact = () => {
+import { forwardRef } from "react";
+
+const Contact = forwardRef((_props, ref) => {
     return (
-        <div className="dark:bg-[#242828] bg-gray-200 py-14 dark:text-white text-black font-mono mx-2 [&>*]:my-14 w-full">
+        <div className="dark:bg-[#242828] bg-gray-200 py-14 dark:text-white text-black font-mono mx-2 [&>*]:my-14 w-full" ref={ref}>
             <div className="flex flex-col items-center">
                 <h1 className="text-center font-semibold text-green-600">Contact</h1>
                 <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5 mb-5">
@@ -24,12 +26,13 @@ const Contact = () => {
                                 <label className="block text-left mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message :</label>
                                 <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                             </div>
-                            <button type="submit" className="bg-green-500  w-fit h-fit  md:w-[20vw] max-w-[250px]  mt-2 py-3 font-semibold dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105">Send message</button>
+                            <button type="submit" className="bg-green-500 w-fit h-fit md:w-[20vw] max-w-[250px] mt-2 py-3 font-semibold dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105">Send message</button>
                         </form>
                     </div>
                 </section>
             </div>
         </div>
     );
-};
+});
+
 export default Contact;
