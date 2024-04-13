@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub , faLinkedin , faFacebook  } from '@fortawesome/free-brands-svg-icons';
 import { MouseEventHandler } from 'react';
 
+
 const Home =(props: { onScrollProjects: MouseEventHandler<HTMLButtonElement> | undefined; })=>{
     return (
         <div className={` dark:bg-[#242424] bg-gray-100 h-fit md:py-[10%] py-[20%] `}>
