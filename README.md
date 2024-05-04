@@ -17,6 +17,7 @@ Explore the live demo: [Portfolio](https://rayen-k-portfolio.netlify.app/)
 ## Technologies Used
 
 - React
+- typescript
 - vite
 - Tailwind CSS
 - framer-motion
