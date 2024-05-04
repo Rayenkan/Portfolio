@@ -8,9 +8,9 @@ import Contact from "./components/contact.tsx";
 import Footer from "./components/Footer.tsx";
 
 function App() {
-  const aboutMeRef = useRef(null)
-  const projectsRef = useRef(null)  
-  const contactsRef = useRef(null)
+  const aboutMeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactsRef = useRef(null);
   const onScrollAboutMe = () => {
     aboutMeRef.current.scrollIntoView({
       behavior: "smooth",
@@ -46,7 +46,7 @@ function App() {
       <Home onScrollProjects={onScrollProjects} />
       <AboutMe ref={aboutMeRef} />
       <Projects ref={projectsRef} />
-      <Contact ref={contactsRef}/>
+      <Contact ref={contactsRef} />
       <Footer />
     </div>
   );

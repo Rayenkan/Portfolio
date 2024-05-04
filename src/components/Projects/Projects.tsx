@@ -3,17 +3,28 @@ import pyCompilerImg from "./projectImg/pythonCompiler.webp";
 import recipeWebImg from "./projectImg/recipeSharing.webp";
 import GameHubImg from "./projectImg/gameInfoHub.webp";
 import { forwardRef } from "react";
+import { motion } from "framer-motion";
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <div className="dark:bg-[#242424] bg-gray-100 py-10 dark:text-white text-black font-mono mx-2 [&>*]:my-14  w-fit" ref={ref}>
-      <div className="flex flex-col items-center">
-        <h1 className="text-center font-semibold text-green-600">My Recent Work</h1>
+    <div
+      className="dark:bg-[#242424] bg-gray-100 py-10 dark:text-white text-black font-mono mx-2 [&>*]:my-14  w-fit"
+      ref={ref}
+    >
+      <motion.div
+        className="flex flex-col items-center"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-center font-semibold text-green-600">
+          My Recent Work
+        </h1>
         <p className="md:w-[60%] w-[80%] text-center font-semibold mt-5 mb-5">
           Here you will find some of the personal and clients projects that I
           created with each project containing its own case study
         </p>
-      </div>
+      </motion.div>
       <div className="[&>*]:my-10">
         <ProjectPage
           src={pyCompilerImg}
@@ -42,9 +53,14 @@ const Projects = forwardRef((props, ref) => {
       </div>
       <div>
         <a href="https://github.com/Rayenkan?tab=repositories">
-          <button className="bg-green-500 w-fit h-fit p-2 md:w-[20vw] max-w-[250px] mt-2 py-4 font-semibold dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105">
+          <motion.button
+            className="bg-green-500 w-fit h-fit p-2 md:w-[20vw] max-w-[250px] mt-2 py-4 font-semibold dark:text-white text-gray-800 transition duration-300 ease-in-out transform hover:scale-105"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             See More On Github
-          </button>
+          </motion.button>
         </a>
       </div>
     </div>
