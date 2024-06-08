@@ -22,9 +22,9 @@ const Nav = (props: {
   };
   return (
     <motion.div
-    initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+      initial={{ y: -20, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
       className={`${props.mode}  ${
         menuVisible ? "border-b-0" : " "
       } w-[100vw] h-20 flex justify-between items-center px-3 bg-white dark:bg-[#242424] rounded-md`}
@@ -38,7 +38,6 @@ const Nav = (props: {
         className={` bg-white  fixed top-0 left-0 right-0 bottom-0 md:static md:top-auto md:left-auto md:right-auto md:bottom-auto  md:flex-row flex-col items-center list-none dark:bg-[#262624] bg-gray-300 text-center  h-[100vh] md:h-fit    z-50 md:z-0 text-[#373743]  gap-8 md:gap-[4vw] mt-[20%] pt-[12vh] md:pt-[0%] md:w-fit   md:mt-0 cursor-pointer md:space-x-8  [&>*]:cursor-pointer ${
           menuVisible ? "flex" : "hidden md:flex"
         } `}
-        
       >
         <li
           className={`relative  text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
@@ -65,10 +64,11 @@ const Nav = (props: {
           Projects
         </li>
         <li
-          className={`relative text-xl text-black dark:text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
+          className={`relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
           onClick={onToggleMenu}
         >
-          Resume
+          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:0ed4bafa-9487-4961-b552-a3c989123f31" className="text-xl text-black dark:text-white hover:text-black dark:hover:text-white" download>Resume</a>
+          
         </li>
       </ul>
       <div className="flex items-center [&>*]:mx-3   ">
