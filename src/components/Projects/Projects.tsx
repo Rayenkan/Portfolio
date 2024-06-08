@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Projects = forwardRef((props, ref) => {
   return (
     <div
-      className="dark:bg-[#242424] bg-gray-100 py-10 dark:text-white text-black font-mono mx-2 [&>*]:my-14  w-fit"
+      className="dark:bg-[#242424] bg-gray-100 py-10 dark:text-white text-black font-mono[&>*]:my-14  w-fit"
       ref={ref}
     >
       <motion.div

@@ -15,7 +15,7 @@ const ProjectPage = ({ src, projectName, projectDesc, projectLink }) => {
           className="max-w-full h-auto rounded-xl border border-black"
         />
       </div>
-      <div className="md:w-[50%] md:pl-4 [&>*]:mt-5 md:ml-12 ml-2 ">
+      <div className="md:w-[50%] md:pl-4 [&>*]:mt-5 md:ml-12 ">
         <p className="text-2xl font-semibold text-left">{projectName}</p>
         <p className="text-lg text-left">{projectDesc}</p>
         <div className="flex justify-start">

@@ -4,7 +4,7 @@ import { forwardRef } from "react";
 const Contact = forwardRef((_props, ref) => {
   return (
     <motion.div
-      className="dark:bg-[#242828] bg-gray-200 py-14 dark:text-white text-black font-mono md:mx-2 [&>*]:my-14 w-full"
+      className="dark:bg-[#242828] bg-gray-200 py-14 dark:text-white text-black font-mono  [&>*]:my-14 w-[100vw]"
       ref={ref}
       initial={{ y: -50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}

@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: 'selector',
+  darkMode: 'class', // Changed from 'selector' to 'class' for better compatibility
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
+    
   },
   plugins: [
     function ({ addUtilities }) {
@@ -22,5 +23,4 @@ export default {
       addUtilities(newUtilities);
     }
   ],
-  
 }
