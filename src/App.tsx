@@ -33,7 +33,7 @@ function App() {
   };
   return (
     <div
-      className={`${mode} no-scrollbar overflow-auto h-[100vh] w-[100vw] bg-white dark:bg-[#242424] grid grid-flow-row items-center`}
+      className={`${mode} no-scrollbar overflow-x-hidden h-[100vh] w-[100vw] bg-white dark:bg-[#242424] grid grid-flow-row items-center`}
     >
       <Nav
         mode={mode}

@@ -8,14 +8,14 @@ const ProjectPage = ({ src, projectName, projectDesc, projectLink }) => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="md:w-[40%] ml-12">
+      <div className="md:w-[40%] w-full ml-1">
         <img
           src={src}
           alt="img"
           className="max-w-full h-auto rounded-xl border border-black"
         />
       </div>
-      <div className="md:w-[50%] md:pl-4 [&>*]:mt-5 ml-12 ">
+      <div className="md:w-[50%] md:pl-4 [&>*]:mt-5 md:ml-12 ml-2 ">
         <p className="text-2xl font-semibold text-left">{projectName}</p>
         <p className="text-lg text-left">{projectDesc}</p>
         <div className="flex justify-start">

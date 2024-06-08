@@ -21,7 +21,7 @@ const AboutMe = forwardRef((_props, ref) => {
       </motion.div>
       <div className="flex flex-col md:flex-row md:h-[85vh] h-fit w-full [&>*]:my-5 ">
         <motion.div
-          className="w-full text-left ml-12 [&>*]:my-10 font-semibold"
+          className="w-full text-left md:ml-10 ml-5 [&>*]:my-10 font-semibold"
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -56,7 +56,7 @@ const AboutMe = forwardRef((_props, ref) => {
           </div>
         </motion.div>
         <motion.div
-          className="w-full text-left ml-12 mr-5 "
+          className="w-full text-left md:ml-10 ml-5 mr-5 "
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
