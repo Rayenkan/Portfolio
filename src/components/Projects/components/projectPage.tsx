@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const ProjectPage = ({ src, projectName, projectDesc, projectLink }) => {
+const ProjectPage = ({ src, projectName, projectDesc, projectLink }:any) => {
   return (
     <motion.div
       className="flex flex-col md:flex-row "

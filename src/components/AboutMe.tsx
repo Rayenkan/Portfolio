@@ -67,17 +67,20 @@ const AboutMe = forwardRef((_props, ref) => {
               <p>HTML</p>
               <p>CSS</p>
               <p>Responsive design</p>
-              <p>javascript</p>
+              <p>javaScript</p>
+              <p>typeScript</p>
               <p>tailwindCss</p>
               <p>reactJs</p>
               <p>viteJs</p>
+              <p>NextJs</p>
               <p>NodeJs</p>
               <p>express</p>
               <p>flask</p>
               <p>Mysql</p>
-              <p>sql</p>
+              <p>mongoDB</p>
               <p>Python</p>
               <p>Git/Github</p>
+              <p>Gitlab</p>
             </p>
           </div>
         </motion.div>

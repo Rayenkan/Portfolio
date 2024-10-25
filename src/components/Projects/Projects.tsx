@@ -1,11 +1,11 @@
 import ProjectPage from "./components/projectPage";
 import pyCompilerImg from "./projectImg/pythonCompiler.webp";
 import recipeWebImg from "./projectImg/recipeSharing.webp";
-import GameHubImg from "./projectImg/gameInfoHub.webp";
+import typingTest from "./projectImg/typingtest.webp"
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
 
-const Projects = forwardRef((props, ref) => {
+const Projects = forwardRef((_props, ref) => {
   return (
     <div
       className="dark:bg-[#242424] bg-gray-100 py-10 dark:text-white text-black font-mono[&>*]:my-14  w-fit"
@@ -26,6 +26,14 @@ const Projects = forwardRef((props, ref) => {
         </p>
       </motion.div>
       <div className="[&>*]:my-10">
+      <ProjectPage
+          src={typingTest}
+          projectName={"TypeMaster"}
+          projectDesc={
+            "TypeMaster is a web application designed to test and improve typing speed. Built with Next.js, Tailwind CSS, TypeScript, and Firebase for authentication, TypeMaster offers users a sleek and responsive interface to measure their typing performance."
+          }
+          projectLink={"https://typing-speed-testp.netlify.app/"}
+        />
         <ProjectPage
           src={pyCompilerImg}
           projectName={"Python Online Interpreter"}
@@ -42,14 +50,7 @@ const Projects = forwardRef((props, ref) => {
           }
           projectLink={"https://github.com/Rayenkan/RecipiesSharing"}
         />
-        <ProjectPage
-          src={GameHubImg}
-          projectName={"GameInfoHub"}
-          projectDesc={
-            "This project is a simple web application built with Python and Flask, allowing users to search for games using the RAWG Video Games Database API."
-          }
-          projectLink={"https://github.com/Rayenkan/GameInfoHub"}
-        />
+       
       </div>
       <div>
         <a href="https://github.com/Rayenkan?tab=repositories">
