@@ -67,7 +67,7 @@ const Nav = (props: {
           className={`relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] dark:after:bg-white after:bg-green-500  after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center`}
           onClick={onToggleMenu}
         >
-          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:ec397658-0143-45d2-8075-c63739105b18" className="text-xl text-black dark:text-white hover:text-black dark:hover:text-white" download>Resume</a>
+          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:becc49e0-5ca6-4e72-89ef-e45652fb49e1" className="text-xl text-black dark:text-white hover:text-black dark:hover:text-white" download>Resume</a>
           
         </li>
       </ul>
